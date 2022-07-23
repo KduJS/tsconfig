@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+
+    // Required in Kdu projects
+    "jsx": "preserve",
+
+    // `"noImplicitThis": true` is part of `strict`
+    // Added again here in case some users decide to disable `strict`.
+    // This enables stricter inference for data properties on `this`.
+    "noImplicitThis": true,
+    "strict": true,
+
+    // Required in Wite
+    "isolatedModules": true,
+    // For `<script setup>`
+    // See <https://devblogs.microsoft.com/typescript/announcing-typescript-4-5-beta/#preserve-value-imports>
+    "preserveValueImports": true,
+    // Enforce using `import type` instead of `import` for types
+    "importsNotUsedAsValues": "error",
+
+    // A few notes:
+    // - Kdu 3 supports ES2016+
+    // - For Wite, the actual compilation target is determined by the
+    //   `build.target` option in the Wite config.
+    //   So don't change the `target` field here. It has to be
+    //   at least `ES2020` for dynamic `import()`s and `import.meta` to work correctly.
+    // - If you are not using Wite, feel free to override the `target` field.
+    "target": "ESNext",
+
+    // Recommended
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+  }
+}

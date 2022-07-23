@@ -1,0 +1,34 @@
+{
+  "name": "@kdujs/tsconfig",
+  "version": "0.1.3",
+  "description": "A base TSConfig for working with Kdu.js",
+  "main": "tsconfig.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdujs/tsconfig.git"
+  },
+  "keywords": [
+    "kdu",
+    "tsconfig"
+  ],
+  "author": "NKDuy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kdujs/tsconfig/issues"
+  },
+  "homepage": "https://github.com/kdujs/tsconfig#readme",
+  "peerDependencies": {
+    "@types/node": "*"
+  },
+  "peerDependenciesMeta": {
+    "@types/node": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
